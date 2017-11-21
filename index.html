@@ -18,7 +18,7 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<span class="image"><img src="images/avatar.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">Mechanics</a></h1>
 					<h5>An Extended Introduction</h5>
 					<p>By Shankar Balasubramanian and Ross Dempsey</p>
@@ -42,7 +42,7 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Mechanics: An Extended Introduction</h2>
+										<h3>Mechanics: An Extended Introduction</h3>
 										<p>Available on <a target="_blank" href="https://www.amazon.com/Mechanics-Extended-Introduction-Shankar-Balasubramanian/dp/1518659918">Amazon</a></p>
 									</header>
 									<p>This book aims to present a self-contained survey of important topics in classical mechanics. Starting from basic mathematical foundations, Newtonian mechanics is developed with an emphasis on problem solving methods and advanced topics. The later, increasingly sophisticated chapters go beyond the material usually covered in an introductory course. They delve into topics including gyroscopic motion, central forces and scattering, oscillations, wave analysis, and special relativity. A great deal of emphasis is placed on problem solving. Over 150 worked examples are distributed throughout the text and model a variety of useful techniques. Additionally, each chapter finishes with an extensive and difficult problem set. A special effort has been made to make these problem sets diverse and challenging; they should serve as rigorous tests of understanding, as well as avenues for further exploration. In addition to the main material, this book contains over 250 figures and detailed appendices on multivariable calculus, linear algebra, and differential equations.</p>
@@ -121,8 +121,7 @@
 							"mechanics.comments@gmail.com",
 							"["+$("#name").val()+"] "+$("#subject").val(),
 							$("#message").val(),
-							{token: "4130a9a1-1341-4e56-bc58-c3508949b791"});
-						return false;
+							{token: "4130a9a1-1341-4e56-bc58-c3508949b791", callback: function done(message) {console.log("sent: "+message) }});
 					});
 				});
 			</script>
