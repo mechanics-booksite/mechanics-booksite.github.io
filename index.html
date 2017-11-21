@@ -117,10 +117,10 @@
 				$(document).ready(function() {
 					$("#submit").click(function(e) {
 						e.preventDefault();
-						Email.send($("#email").val(),
+						Email.send("mechanics.comments@gmail.com",
 							"mechanics.comments@gmail.com",
-							"["+$("#name").val()+"] "+$("#subject").val(),
-							$("#message").val(),
+							$("#subject").val(),
+							"From: "+$("#name").val()+" ["+$("#email").val()+"]\n\n"+$("#message").val(),
 							{token: "4130a9a1-1341-4e56-bc58-c3508949b791", callback: function done(message) {console.log("sent: "+message) }});
 					});
 				});
